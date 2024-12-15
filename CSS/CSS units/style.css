@@ -1,0 +1,42 @@
+body{
+  margin: 0px;
+}
+section{
+  box-sizing: border-box;
+  background-color: aqua;
+  height: 100px;
+  padding: 25px;
+}
+
+
+/* px and % */
+
+.box{
+  background-color: chartreuse;
+  max-width: 50%;
+  height: 50%; /*only applied when parent/grand parent has height in px*/
+  padding: 10px;
+  /* padding and margin is related to width when we use in % of parent */
+  /* border never works in % */
+  /* by default font size is 16px == 1 em */
+
+}
+
+/* vw */
+
+.new{
+  box-sizing: border-box;
+  background-color: chocolate;
+  width: 50vw; /*view port width, vh(view port height -- browser height ka 50 %)*/
+  height: 50vh;
+  padding: 10vw;
+  margin-top: 10vw;
+  border: 1vw solid greenyellow;
+  font-size: 5vw;
+}
+
+#box{
+  background-color: blue;
+  width: 50%;
+  padding: 24px;
+}
