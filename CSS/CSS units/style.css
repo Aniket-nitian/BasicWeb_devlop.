@@ -40,3 +40,23 @@ section{
   width: 50%;
   padding: 24px;
 }
+
+.em{
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  width: 10em;
+  height: 5em;
+  
+  font-size: 2em;
+  font-size: 2em;  /*32 px*/
+  font-size: 2rem; /*root to html*/
+
+}
+
+#em{
+  background-color: brown;
+  width: 5em; /* 80 px not related to parent*/
+  padding: 0.5em; /* 8 px*/
+  font-size: 1em; /* 32 px becuse it's parent has 32 px */
+  font-size: 1rem; /*html tag font-size * 1 == __px*/
+}
