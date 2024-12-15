@@ -1,0 +1,51 @@
+div{
+  background-color: chartreuse;
+  /* postion: static */
+  position: relative;
+  /* After applying position relative 4 properties opens */
+  top: 10px; /* margin top*/
+  bottom: 10px;  /*top: -10px*/
+  left: 10px;
+  right: 10px;
+  /* top right bottom left all in one -- inset: 10px */
+}
+
+.css{
+  background-color: aquamarine;
+  position: absolute;
+  /* rahega apni jagah pe he mgr space nhi lega */
+  /* After applying position absolute same 4 properties opens */
+  top: 56px;
+  left: 5px;
+  right: 5px;
+  /* inset: 50px; */
+  /* it is related/attached to parent */
+  }
+
+  .javascript{
+    background-color: blueviolet;
+    position: fixed;
+    /*rahega apni jagah pe he mgr space nhi lega */
+    /* inset: 10px; */
+    /* its always related/attached to view-port */
+  }
+
+  ul{
+    background-color: cornflowerbluepos;
+    position: relative;
+    height: 300px;
+    overflow: scroll;
+  }
+
+  .html{
+    background-color: brown;
+    position: static;
+    /* never goes out of parent */
+    /* Give some height to its parent and put scroll bar in its parent-- overflow: scroll */
+    top: 25px;
+  }
+  header{
+    background-color: cadetblue;
+    position: sticky;
+    top: 0px;
+  }
