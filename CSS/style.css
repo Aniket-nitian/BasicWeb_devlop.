@@ -1,0 +1,47 @@
+h1{
+  /* text-decoration: underline; */
+  color: blue;
+  text-decoration: wavy;
+  text-align: center;
+}
+
+ul #a{
+  color: #ff69b4;
+}
+
+[class="learn"] {
+color: red;
+}
+
+[aniket] {
+  color: blueviolet;
+}
+
+/* pseudo selector */
+
+h1:hover{
+  visibility: hidden;
+}
+
+/* cascade(css is applied from top to bottom, value increases as moving down) */
+
+/* lower css overwrite the upper one
+but in some cases, it diesn't -- specificity */
+
+/* if specificity is more that style will always apply never get overwrite */
+
+/* !important > inline(element stype) > id > class > tag */
+/* specificity > cascade */
+
+li #a{  
+  color: #ff69b4;
+}
+/* specificity increased */
+
+/* inheritace(parent to choildren to ....) property inherit */
+
+/* important keyword? */
+
+#a {
+  background-color: aquamarine !important;
+}

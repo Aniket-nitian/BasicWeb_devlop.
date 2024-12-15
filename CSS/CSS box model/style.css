@@ -1,0 +1,78 @@
+/* *{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+} */
+
+.parent{
+  background-color: burlywood;
+  height: 400px;
+
+}
+
+
+
+.one{
+  background-color: pink;
+  /* width: 500px;
+  height: 300px; */
+  /* absolute width, height, overflow possible*/
+  overflow: hidden;
+  /* extra part will disappear */
+width: 50%;
+/* 50% of parent. */
+height: 50%;
+/* height only work when parent has also height in px */
+
+margin: 20px;
+
+
+}
+.two{
+  background-color: blueviolet;
+  max-width: 500px;
+  min-height: 300px;
+  padding: 20px 10px 15px 25px;
+  /* 20px from all 4 side */
+  /* padding-top/right/bottom/left */
+
+  border: 10px solid teal;
+  /* solid/doted/dash.... */
+  /* after giving padding border actual dimensions increases to overcome  */
+  box-sizing: border-box;
+  border-radius: 15px;
+  outline: 10px solid hotpink;
+
+  margin: 20px;
+  /* margin does not impact height and width */
+}  
+
+/* block element always take box shape but inline take shape according to containt */
+
+.span{
+  background-color: chartreuse;
+  width: 1000px;
+  height: 100px;
+  /*width height will not be applied/ auto is seted  display:inline;*/
+  padding: 20px;
+  margin: 10px;
+  /* dusre pe chadd jayega */
+  /* inline el can be converted into block elememt using display prop*/
+  display: block;
+}
+
+span{
+  display: inline-block;
+  /* used to put in a line*/
+  background-color: cadetblue;
+  width: 60px;
+  height: 40px;
+  border: 10px solid pink;
+  margin: 20px;
+  padding: 25px;
+}
+
+
+/* some inline element are replaced like tags -- img/video/iframe(videos/different websites....) its box is not set auto, it can be modified without using display property*/
+
+/* some inline element are non replaced like span/a/....*/

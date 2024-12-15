@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome everyone" />
+    <title>FORM</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>HTML form</h1>
+    <form action="/">
+      <!-- default height of form is 0px -->
+      <input type="text" name="search" id="" />
+      <button>submit</button>
+      <!-- name = search-query is for google,q for flipkard -->
+    </form>
+
+    <!-- form to reach youtube -->
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" id="" />
+      <button>search on youTube</button>
+    </form>
+
+    <!-- type -->
+
+    <form action="/">
+      <input type="email" name="email" id="" />
+      <!-- @ == %40 -->
+      <button>email</button>
+
+      <!-- types - password/number -->
+    </form>
+    <form action="/">
+      <input type="password" placeholder="password" />
+
+      <!-- label -->
+
+      <label for="flipkard">NUMBER</label>
+      <input
+        id="flipkard"
+        type="number"
+        placeholder="number"
+        required
+        min="100"
+        max="5000"
+      />
+
+      <input type="checkbox" placeholder="" />
+      <input type="color" placeholder="color" />
+      <input type="date" placeholder="date" />
+      <input type="time" placeholder="time" />
+      <input type="file" />
+      <input type="tel" />
+      <input type="submit" />
+
+      <!-- button type -->
+
+      <button type="submit"></button>
+      <button type="button"></button>
+      <button type="reset"></button>
+      <button type="menu"></button>
+    </form>
+  </body>
+</html>
