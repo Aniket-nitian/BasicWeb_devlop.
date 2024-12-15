@@ -1,0 +1,40 @@
+.box{
+  width: 200px;
+  height: 200px;
+
+  background-color: rgba(0, 128, 0, 0.57);
+  /*alpha channel / */
+
+  opacity: 0.5;  /* opacity -- transparent , inside content will also get tranparency but not in case of alpha channel*/
+  
+  transform: scale(2);  /* 2 times of its original dimensions */
+  transform: scaleX(2);  /* 2 times of its width dimensions */ 
+  transform: scaleY(2); /* 2 times of its height dimensions */
+  transform: scaleZ(2); /* towards computer screen, not shows */
+  /* transform: scale(2,2) */
+
+  transform-origin: 0 0;
+ 
+  transform: skew(20deg,25deg); /*rotation*/
+
+  transform: translate(20px,20px,25px); /*like margin but it does not pushes other contents movement wrt its own origin */
+  /* transform: translate(50%,50%,); --div at center. */
+  /* transform: rotate(90deg); */
+  /* to change origin use--transform-origin: 0 0 /top left etc*/
+
+}
+
+.shadow{
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.664); /* x,y,....*/
+  /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.664); */
+  /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.664) inset; */ /* for inner shadow */
+  
+  background-image: url(https://www.sportzcraazy.com/wp-content/uploads/2020/02/ms-dhoni.jpeg);
+  background-size: contain; /* background imaage get repeate*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-x: 10px ; */
+}
