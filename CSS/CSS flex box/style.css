@@ -1,0 +1,35 @@
+
+*{
+  box-sizing: border-box;
+  /*  */
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    padding: 10px;
+    border: 4px solid indianred;
+    display: flex;
+    /* All element become display block element and all in a single line*/
+}
+
+.parent span {
+    background-color: aquamarine;
+    border: 4px solid cadetblue;
+    width: 200px;
+    height: 300px;
+}
+
+.parent p {
+    background-color: cadetblue;
+    border: 4px solid darkkhaki;
+    /* width: max-content;
+    width: min-content; */
+}
+
+.parent a {
+    background-color: yellow;
+    border: 4px solid yellowgreen;
+}
