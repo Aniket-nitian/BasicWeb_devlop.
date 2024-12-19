@@ -1,0 +1,34 @@
+
+.square {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    print-color-adjust: exact; /*for firefox*/
+   -webkit-print-color-adjust: exact;  /*for chrome*/
+   /* when printing(clt + p) print background colour also */
+}
+
+
+/* By default all (print + screen) */
+@media all {
+  .square {
+       background-color: hotpink; /*change background color while printing*/
+       border:25px solid red; /*remove border while printing*/
+   }
+}
+
+
+@media print {
+   .square {
+        background-color: hotpink; /*change background color while printing*/
+        border:25px solid red; /*remove border while printing*/
+    }
+}
+
+@media screen {
+  .square {
+       background-color: hotpink; /*change background color while on screen*/
+       border:25px solid red; /*remove border while on screen*/
+   }
+}

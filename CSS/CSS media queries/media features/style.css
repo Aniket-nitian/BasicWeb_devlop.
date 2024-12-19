@@ -1,0 +1,32 @@
+
+.square {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border: 25px solid blue;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+@media (orientation: portrait) and (width > 400px){
+    .square  {
+        border: 25px solid red;
+        background-color: hotpink;
+    }
+}
+
+/* Range syntx (not work in safari use min/max-width) */
+@media (500px <= width <= 700px) {
+  
+    .square  {
+        border: 25px solid blue;
+        background-color: pink;
+    }
+}
+
+@media print and (max-width = 200px){
+    .square {
+        border: 25px solid green;
+        background-color: lightblue;
+    }
+}
